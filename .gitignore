@@ -43,4 +43,3 @@ vectors-*.txt
 __pycache__/
 
 *.obj
-*.csv
