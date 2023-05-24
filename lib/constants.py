@@ -9,7 +9,6 @@ SPECIAL_CHARACTER_MAPS = {
     "eng" : {}
 }
 
-
 SPACY_LANGS = {"eng" : "en_core_web_sm",
                 "fr" : "fr_core_news_sm",
                 "ger" : "de_core_news_sm",

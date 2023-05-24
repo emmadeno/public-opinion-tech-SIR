@@ -1,5 +1,6 @@
 id,lang,timespan,keyword,topics,topic_name,count
 eng_1840_telephone_0,eng,1840,telephone,"['price', 'assortment', 'Broadway', 'article', 'instrument', 'retail', 'street', 'wholesale', 'hair', 'Fulton', 'offer', 'cent', 'stock', 'Wall', 'style']",sales,47
+eng_1840_telephone_1,eng,1840,telephone,"['John', 'Mary', 'Smith', 'Henry', 'James', 'Capt', 'Brown', 'Edward', 'Patrick', 'Thomas', 'Sarah', 'Martin', 'William', 'David', 'George']",random,0
 eng_1840_telephone_2,eng,1840,telephone,"['word', 'Bible', 'character', 'language', 'school', 'society', 'Lord', 'race', 'dress', 'idea', 'sound', 'white', 'represent', 'history', 'Austria']",religion,25
 eng_1840_telephone_3,eng,1840,telephone,"['night', 'evening', 'appear', 'theatre', 'hear', 'prisoner', 'play', 'yesterday', 'woman', 'move', 'house', 'opera', 'perform', 'morrow', 'crowd']",theatre,43
 eng_1840_telephone_4,eng,1840,telephone,"['General', 'army', 'rebel', 'regiment', 'government', 'officer', 'enemy', 'troop', 'Colonel', 'battle', 'right', 'drive', 'command', 'british', 'horse']",war,25
@@ -8,6 +9,7 @@ eng_1840_telephone_6,eng,1840,telephone,"['funeral', 'invite', 'residence', 'age
 eng_1840_telephone_7,eng,1840,telephone,"['question', 'bill', 'President', 'report', 'resolution', 'Committee', 'Senate', 'committee', 'vote', 'Congress', 'witness', 'Court', 'whig', 'party', 'Convention']",politics,43
 eng_1840_telephone_8,eng,1840,telephone,"['street', 'apply', 'avenue', 'room', 'Address', 'Broadway', 'Board', 'want', 'family', 'gentleman', 'Herald', 'atreet', 'reference', 'house', 'private']",hiring,68
 eng_1840_telephone_9,eng,1840,telephone,"['tbat', 'thai', 'will', 'tlio', 'hare', 'tell', 'week', 'light', 'Railroad', 'anil', 'lead', 'thin', 'tint', 'wear', 'till']",random,0
+eng_1840_telephone_10,eng,1840,telephone,"['NYork', 'brig', 'bark', 'Schr', 'Boston', 'Baltimore', 'ship', 'Philadelphia', 'Bark', 'April', 'Brig', 'Liverpool', 'Ship', 'port', 'schr']",boats,36
 eng_1840_telephone_11,eng,1840,telephone,"['cause', 'church', 'people', 'think', 'meeting', 'public', 'believe', 'regard', 'long', 'result', 'principle', 'view', 'doubt', 'ment', 'condition']",random,0
 eng_1840_telephone_12,eng,1840,telephone,"['cure', 'disease', 'freight', 'cabin', 'street', 'remedy', 'bottle', 'North', 'medicine', 'case', 'Albany', 'stricture', 'passenger', 'pain', 'ship']",medicine,14
 eng_1870_telephone_0,eng,1870,telephone,"['year', 'street', 'tlio', 'prize', 'morning', 'place', 'invite', 'Church', 'funeral', 'State', 'late', 'book', 'John', 'receive', 'number']",funeral,57
@@ -39,12 +41,17 @@ fr_1820_gasoline_7,fr,1820,gasoline,"['temps', 'poete', 'verite', 'plaisir', 'co
 fr_1820_gasoline_8,fr,1820,gasoline,"['Armand', 'quintessence', 'precieux', 'cours', 'remede', 'guerit', 'invetere', 'approuve', 'charlatanisme', 'durillon', 'cors', 'mede', 'contrefaire', 'linge', 'Clery']",medicine,31
 fr_1820_gasoline_9,fr,1820,gasoline,"['jamais', 'mieux', 'roman', 'force', 'nombre', 'guerre', 'doute', 'entendre', 'second', 'fois', 'ment', 'nature', 'litterature', 'partie', 'point']",literature,14
 fr_1820_gasoline_10,fr,1820,gasoline,"['mesd', 'acte', 'vaud', 'millimètre', 'Paul', 'théâtre', 'Lepeintre', 'Albert', 'comedie', 'Guillemin', 'vaudevill', 'Theodore', 'theatre', 'Ferville', 'george']",theatre,23
+ger_1880_gasoline_0,ger,1880,gasoline,"['Pastor', 'Predigt', 'Abendmahl', 'Gottesdienst', 'Tausch', 'Kirche', 'Hauptpastor', 'abends', 'Kandidat', 'Pastorat', 'Kindergottesdienst', 'Onkel', 'Sonntag', 'evangelisch', 'Prediger']",religion,7
 ger_1880_gasoline_1,ger,1880,gasoline,"['Mutter', 'sitzen', 'elektrisch', 'Herz', 'nennen', 'Blick', 'Licht', 'lieben', 'Liebe', 'Onkel', 'lesen', 'lachen', 'bezahlen', 'jung', 'Wasser']",family,60
+ger_1880_gasoline_2,ger,1880,gasoline,"['Steindamm', 'Langereihe', 'Neust', 'billig', 'Preis', 'Verkauf', 'Wexstr', 'Vorm', 'Part', 'Moebel', 'kaufen', 'Panli', 'Filiale', 'Steinweg', 'Barmbeck']",ssles,14
 ger_1880_gasoline_3,ger,1880,gasoline,"['Maedch', 'Gesucht', 'suchen', 'Lohn', 'Stell', 'Maedche', 'Naeh', 'Tuecht', 'verm', 'tuechtig', 'Moebl', 'Lehrling', 'vermiethen', 'Mdch', 'Wohn']",hiring,72
+ger_1880_gasoline_4,ger,1880,gasoline,"['Juli', 'Juni', 'Berlin', 'Paris', 'England', 'Deutschland', 'Million', 'Kaiser', 'Frankreich', 'Oktober', 'Kilometer', 'Reich', 'Regierung', 'Handel', 'Koenigin']",international,40
 ger_1880_gasoline_5,ger,1880,gasoline,"['angeklagter', 'November', 'Senat', 'Antrag', 'Ausschuß', 'Leiche', 'betreffend', 'Buergerschaft', 'beantragen', 'Zeuge', 'vorsitzend', 'beschließen', 'April', 'nachmittag', 'abend']",crime,32
+ger_1880_gasoline_6,ger,1880,gasoline,"['Heinrich', 'Friedrich', 'Anna', 'Carl', 'Johann', 'Wilhelm', 'Maria', 'Standesamt', 'Johanna', 'Wilhelmine', 'Christian', 'Hermann', 'Dorothea', 'Caroline', 'Marie']",names,28
 ger_1880_gasoline_7,ger,1880,gasoline,"['Meter', 'rennen', 'laufen', 'Platz', 'abends', 'Professor', 'gewinnen', 'Sieg', 'fahren', 'September', 'fich', 'Bahn', 'Theater', 'Pferd', 'Gericht']",race,24
 ger_1880_gasoline_8,ger,1880,gasoline,"['Vater', 'Wort', 'scheinen', 'sagen', 'glauben', 'fragen', 'rufen', 'denken', 'haeten', 'Brief', 'Stunde', 'Mensch', 'Welt', 'Name', 'erheben']",random,0
 ger_1880_gasoline_9,ger,1880,gasoline,"['gestern', 'Dampfer', 'Schiff', 'fich', 'wohnend', 'erleiden', 'Feuer', 'Kapitaen', 'schaffen', 'Verletzung', 'Hafen', 'Bord', 'Feuerwehr', 'Nachmittag', 'Wind']",boats,107
+ger_1880_gasoline_10,ger,1880,gasoline,"['Redner', 'Staat', 'Klaeger', 'Gesetz', 'Interesse', 'Partei', 'Mitglied', 'Gefaengnis', 'Antrag', 'Fall', 'abends', 'Firma', 'Rede', 'Richter', 'preußisch']",crime,41
 ger_1880_gasoline_11,ger,1880,gasoline,"['Taxe', 'empfehlen', 'Akte', 'billig', 'echt', 'Stueck', 'liefern', 'Apotheke', 'Anfang', 'Pflege', 'Lager', 'Muster', 'Bezirk', 'Preis', 'fertig']",taxes,55
 ger_1880_gasoline_12,ger,1880,gasoline,"['verk', 'Bill', 'Verk', 'Bettst', 'verkaufen', 'eleg', 'billig', 'bill', 'Sofa', 'Stuehle', 'Piano', 'Gebr', 'verkauf', 'Fahrrad', 'Tisch']",sales,36
 sp_1880_gasoline_0,sp,1880,gasoline,"['periodico', 'español', 'Paris', 'libertad', 'nombre', 'Carlos', 'liar', 'Alonso', 'inglés', 'Londres', 'centro', 'efecto', 'escuela', 'politico', 'premio']",public interest,21
@@ -82,6 +89,7 @@ sp_1890_gasoline_12,sp,1890,gasoline,"['ministro', 'general', 'gobierno', 'Cuba'
 sp_1890_gasoline_13,sp,1890,gasoline,"['soldado', 'general', 'puerto', 'oficial', 'corresponsal', 'Jose', 'toro', 'español', 'tropa', 'guerra', 'TELÉGRAFO', 'militar', 'muerto', 'barco', 'teniente']",war,49
 ger_1900_gasoline_0,ger,1900,gasoline,"['verk', 'Bill', 'billig', 'Verk', 'verkaufen', 'suchen', 'Naeh', 'Piano', 'Miete', 'Gesucht', 'bill', 'Eleg', 'eleg', 'Maedch', 'Sofa']",sales,543
 ger_1900_gasoline_1,ger,1900,gasoline,"['Wasser', 'Stunde', 'Tochter', 'Stelle', 'Sohn', 'Mann', 'tief', 'bieten', 'arbeiten', 'reich', 'jung', 'Kopf', 'Familie', 'Maedche', 'werfen']",family,32
+ger_1900_gasoline_2,ger,1900,gasoline,"['gestern', 'August', 'Dampfer', 'Antrag', 'Juni', 'November', 'Senat', 'Schiff', 'Juli', 'Dezember', 'September', 'angeklagter', 'Arbeiter', 'Regierung', 'Wilhelm']",boats,798
 ger_1900_gasoline_3,ger,1900,gasoline,"['Pastor', 'Predigt', 'muessen', 'koennen', 'Kirche', 'bedeckt', 'Kapitaen', 'Auge', 'lassen', 'Leben', 'Brief', 'wissen', 'Abendmahl', 'schreiben', 'Mensch']",religion,260
 sp_1900_gasoline_0,sp,1900,gasoline,"['idem', 'agua', 'metro', 'tierra', 'alcohol', 'gramo', 'color', 'blanco', 'mano', 'hombre', 'mundo', 'materia', 'kilo', 'suelo', 'dejar']",production,239
 sp_1900_gasoline_1,sp,1900,gasoline,"['ministro', 'ayer', 'señor', 'calle', 'noche', 'general', 'obrero', 'Jose', 'comision', 'jefe', 'civil', 'liberal', 'Madrid', 'herido', 'toro']",workers,479
@@ -130,6 +138,7 @@ eng_1850_gasoline_6,eng,1850,gasoline,"['bbls', 'sale', 'market', 'bushel', 'dem
 eng_1850_gasoline_7,eng,1850,gasoline,"['funeral', 'invite', 'residence', 'respectfully', 'attend', 'friend', 'dividend', 'aged', 'relative', 'street', 'afternoon', 'Company', 'family', 'daughter', 'COMPANY']",funeral,214
 eng_1850_gasoline_8,eng,1850,gasoline,"['apply', 'avenue', 'street', 'SALE', 'room', 'acre', 'location', 'furnished', 'house', 'rent', 'gentleman', 'atreet', 'story', 'modern', 'inquire']",real estate,208
 eng_1850_gasoline_9,eng,1850,gasoline,"['pound', 'cent', 'exceed', 'value', 'duty', 'manufacture', 'shall', 'person', 'coal', 'gallon', 'stamp', 'March', 'yard', 'square', 'license']",production,33
+eng_1850_gasoline_10,eng,1850,gasoline,"['John', 'Henry', 'child', 'April', 'Miss', 'wife', 'Thompson', 'George', 'James', 'Mann', 'June', 'Mary', 'Ward', 'Capt', 'City']",random,0
 eng_1850_gasoline_11,eng,1850,gasoline,"['lira', 'tear', 'bare', 'moat', 'anil', 'lata', 'wltb', 'Ilia', 'thai', 'light', 'tail', 'thia', 'tbla', 'April', 'tlie']",random,0
 eng_1850_gasoline_12,eng,1850,gasoline,"['General', 'rebel', 'yesterday', 'army', 'enemy', 'Judge', 'force', 'Court', 'officer', 'troop', 'Sherman', 'prisoner', 'trial', 'arrest', 'capture']",crime,273
 eng_1850_gasoline_13,eng,1850,gasoline,"['Emperor', 'american', 'visit', 'London', 'Mexico', 'America', 'Paris', 'french', 'France', 'England', 'think', 'look', 'word', 'hear', 'government']",international politics,151
@@ -164,6 +173,7 @@ fr_1850_iron_9,fr,1850,iron,"['monsieur', 'femme', 'bien', 'avoir', 'mere', 'vou
 fr_1850_iron_10,fr,1850,iron,"['Monsieur', 'theâtre', 'piece', 'bien', 'acte', 'mademoiselle', 'franc', 'scene', 'rôle', 'jouer', 'monsieur', 'artiste', 'faire', 'talent', 'auteur']",theatre,218
 ger_1910_gasoline_0,ger,1910,gasoline,"['verk', 'Bill', 'billig', 'suchen', 'verkaufen', 'Gesucht', 'Verk', 'bill', 'Sofa', 'Naeh', 'Bettst', 'verkauf', 'Maedch', 'Tisch', 'Altona']",sales,788
 ger_1910_gasoline_1,ger,1910,gasoline,"['Juni', 'Juli', 'Dampfer', 'Beerd', 'gestern', 'August', 'Februar', 'Minute', 'Pfund', 'April', 'Kapitaen', 'angeklagter', 'abend', 'Feuer', 'Bord']",boats,242
+ger_1910_gasoline_2,ger,1910,gasoline,"['Musk', 'Frau', 'Rate', 'verw', 'Otto', 'Carl', 'Paul', 'Hermann', 'Ernst', 'Heinrich', 'Wilhelm', 'Kompagnie', 'verwunden', 'Anna', 'Verw']",companies,128
 ger_1910_gasoline_3,ger,1910,gasoline,"['Krieg', 'deutsch', 'Regierung', 'russisch', 'englisch', 'franzoesisch', 'Deutschland', 'Truppe', 'Oktober', 'Feind', 'Staat', 'England', 'November', 'Offizier', 'Million']",war,1235
 ger_1910_gasoline_4,ger,1910,gasoline,"['Antrag', 'Senat', 'Buergerschaft', 'Pastor', 'bitten', 'muessen', 'wenden', 'koenn', 'Ausschuß', 'Maerz', 'betreffend', 'jung', 'Brief', 'Schule', 'Kind']",public interest,169
 sp_1880_iron_0,sp,1880,iron,"['pais', 'España', 'guerra', 'creer', 'necesidad', 'venir', 'tiempo', 'derecho', 'caso', 'dejar', 'crisis', 'fuerza', 'politico', 'situacion', 'poder']",government,208
@@ -196,8 +206,11 @@ fr_1890_gasoline_6,fr,1890,gasoline,"['femme', 'hier', 'coup', 'police', 'heure'
 fr_1890_gasoline_7,fr,1890,gasoline,"['cuisiniere', 'refer', 'reference', 'place', 'valet', 'menage', 'ecrire', 'representation', 'demande', 'PARIS', 'Theâtre', 'Figaro', 'poudre', 'concierge', 'comedie']",theatre,659
 ger_1920_gasoline_0,ger,1920,gasoline,"['Regierung', 'Partei', 'franzoesisch', 'Flieger', 'September', 'Frankreich', 'Flug', 'politisch', 'englisch', 'August', 'Million', 'Frage', 'angeklagter', 'Paris', 'Staat']",politics,324
 ger_1920_gasoline_1,ger,1920,gasoline,"['nich', 'Senat', 'Froo', 'Sick', 'Ober', 'Hein', 'harr', 'Mark', 'Gemeinde', 'hett', 'Buergerschaft', 'angestellter', 'Verkehr', 'Direktor', 'praktisch']",companies,23
+ger_1920_gasoline_2,ger,1920,gasoline,"['nachm', 'Dampfer', 'April', 'Januar', 'Altona', 'Firma', 'Hafen', 'Wandsbek', 'Februar', 'Prozent', 'erteilen', 'hiesig', 'Gesellschaft', 'Heinrich', 'Wilhelm']",boats,53
 ger_1920_gasoline_3,ger,1920,gasoline,"['verk', 'Bill', 'suchen', 'Verk', 'Heirat', 'billig', 'Moebl', 'Altona', 'vern', 'Maedch', 'Verl', 'bill', 'Heir', 'Laden', 'kaufen']",sales,80
 ger_1920_gasoline_4,ger,1920,gasoline,"['Frau', 'Kind', 'Mensch', 'Wasser', 'Film', 'jung', 'Auge', 'Feuer', 'Mutter', 'denken', 'Haus', 'Nacht', 'Gesicht', 'Freund', 'sitzen']",family,260
+ger_1920_gasoline_5,ger,1920,gasoline,"['Meter', 'rennen', 'Juni', 'Wagen', 'Fahrt', 'Spiel', 'Fahrer', 'Juli', 'Polizei', 'Punkt', 'Klasse', 'Kampf', 'Sonntag', 'Maschine', 'Runde']",car race,128
+ger_1920_gasoline_6,ger,1920,gasoline,"['Heimr', 'AuSr', 'loko', 'Markt', 'Juli', 'Sevt', 'Juni', 'Maer', 'Kilo', 'Rotterdam', 'Nordsee', 'Mill', 'Bank', 'Ausr', 'Preis']",boats,139
 sp_1920_gasoline_0,sp,1920,gasoline,"['gobernador', 'civil', 'obrero', 'alcalde', 'autoridad', 'huelga', 'ciudad', 'puerto', 'presidente', 'visitar', 'Barcelona', 'Exposicion', 'numeroso', 'acto', 'viaje']",government,259
 sp_1920_gasoline_1,sp,1920,gasoline,"['calle', 'lesión', 'grave', 'casa', 'guardia', 'vecino', 'pronostico', 'automovil', 'herido', 'juez', 'herida', 'Juzgado', 'cayo', 'detener', 'producir']",crime,285
 sp_1920_gasoline_2,sp,1920,gasoline,"['partido', 'equipo', 'toro', 'idem', 'Avila', 'jugar', 'carrera', 'campeonato', 'faena', 'Club', 'azul', 'jugador', 'fanego', 'muleta', 'torero']",bullfight,74
@@ -246,7 +259,12 @@ ger_1930_gasoline_3,ger,1930,gasoline,"['Mill', 'Schuppe', 'Prozent', 'Dock', 'M
 ger_1930_gasoline_4,ger,1930,gasoline,"['Million', 'Prozent', 'Milliarde', 'Wirtschaft', 'Entwicklung', 'Tonne', 'Gebiet', 'werben', 'wirtschaftlich', 'Betrieb', 'April', 'Verordnung', 'steigen', 'Deutschland', 'wirb']",economy,143
 ger_1930_gasoline_5,ger,1930,gasoline,"['Januar', 'Dezember', 'fich', 'Februar', 'Schwierigkeit', 'rechnen', 'sllr', 'bestehen', 'infolge', 'Mark', 'find', 'zahlen', 'Datz', 'Verhandlung', 'Linie']",stock,30
 ger_1930_gasoline_6,ger,1930,gasoline,"['nich', 'hett', 'Prokura', 'harr', 'Froo', 'Weur', 'Sick', 'erloschen', 'Hansestadt', 'mien', 'Hett', 'Hein', 'seggt', 'suend', 'Inhaber']",random,0
+ger_1930_gasoline_7,ger,1930,gasoline,"['angeklagter', 'Film', 'Zeuge', 'Leben', 'Polizei', 'Mensch', 'Kunst', 'Buch', 'Geschichte', 'Professor', 'Gericht', 'Theater', 'erkennen', 'Wort', 'Opfer']",crime,253
+ger_1930_gasoline_8,ger,1930,gasoline,"['rennen', 'Sieg', 'Runde', 'Spiel', 'Fahrer', 'Sport', 'Mannschaft', 'Gegner', 'Sieger', 'Spieler', 'Meisterschaft', 'Klasse', 'Start', 'Punkt', 'Mannschafte']",car race,155
 ger_1930_gasoline_9,ger,1930,gasoline,"['Heimr', 'AuSr', 'Pass', 'Hcimr', 'loko', 'Kilo', 'Ausr', 'Rotterdam', 'Antwerpe', 'vass', 'unverzollt', 'Bremen', 'Nordsee', 'August', 'brutto']",boats,77
+ger_1930_gasoline_10,ger,1930,gasoline,"['Frau', 'Mutter', 'Herr', 'Wasser', 'Vater', 'Kind', 'Auto', 'Wagen', 'Gesicht', 'paar', 'Nacht', 'Boot', 'Leute', 'Auge', 'Maedche']",travel,273
+ger_1930_gasoline_11,ger,1930,gasoline,"['Juni', 'Juli', 'April', 'Maer', 'Avril', 'Febr', 'Dtsch', 'Bremen', 'Maerz', 'Gebr', 'passieren', 'Hambura', 'Horn', 'Brem', 'Leder']",random,0
+ger_1930_gasoline_12,ger,1930,gasoline,"['Harburg', 'Feuerwehr', 'Altona', 'Pastor', 'Verein', 'Krankenhaus', 'Wetterdienst', 'Fuehrer', 'Juni', 'veranstalten', 'Schule', 'Geburtstag', 'Veranstaltung', 'Sonntag', 'Leiter']",events,271
 sp_1910_iron_0,sp,1910,iron,"['idem', 'Jose', 'Garcia', 'Francisco', 'Manuel', 'calle', 'Antonio', 'Lopez', 'Luis', 'Perez', 'Fernandez', 'Gonzalez', 'Rodriguez', 'Juzgado', 'doña']",random,0
 sp_1910_iron_1,sp,1910,iron,"['señora', 'viuda', 'duque', 'Victoria', 'duquesa', 'Isabel', 'condesa', 'hija', 'señorita', 'conde', 'palacio', 'marquesa', 'Reina', 'premio', 'marqu']",aristocracy,66
 sp_1910_iron_2,sp,1910,iron,"['España', 'español', 'pais', 'pueblo', 'guerra', 'nacional', 'politico', 'politica', 'Francia', 'opinion', 'cion', 'poder', 'deber', 'crisis', 'creer']",politics,130
@@ -287,6 +305,7 @@ fr_1910_gasoline_0,fr,1910,gasoline,"['comte', 'comtesse', 'marquis', 'comtess',
 fr_1910_gasoline_1,fr,1910,gasoline,"['bien', 'femme', 'petit', 'jeune', 'voir', 'homme', 'chose', 'être', 'savoir', 'vouloir', 'rien', 'temps', 'trop', 'grand', 'beau']",random,0
 fr_1910_gasoline_2,fr,1910,gasoline,"['mlle', 'prix', 'theâtre', 'mutuel', 'Pari', 'representation', 'matinee', 'longueur', 'voiture', 'place', 'club', 'comedie', 'metre', 'automobile', 'gagner']",cars,541
 fr_1910_gasoline_3,fr,1910,gasoline,"['franc', 'valeur', 'allemand', 'guerre', 'gouvernement', 'marche', 'ferme', 'paix', 'contre', 'politique', 'cours', 'calme', 'russe', 'conseil', 'affaire']",politics,1684
+fr_1910_gasoline_4,fr,1910,gasoline,"['Deep', 'Gold', 'pref', 'Copper', 'Consolidated', 'Mines', 'Investment', 'Reef', 'Main', 'Rand', 'Roodepoort', 'prov', 'Oriental', 'Goldfields', 'General']",international economy,868
 sp_1920_iron_0,sp,1920,iron,"['vida', 'obra', 'señor', 'español', 'tierra', 'libro', 'palabra', 'decir', 'cosa', 'idea', 'mundo', 'pensar', 'unico', 'venir', 'sentir']",literature,208
 sp_1920_iron_1,sp,1920,iron,"['mujer', 'mano', 'padre', 'teatro', 'puerta', 'arte', 'hijo', 'viejo', 'amor', 'hombre', 'casa', 'madre', 'alma', 'artista', 'señora']",theatre,357
 sp_1920_iron_2,sp,1920,iron,"['vendo', 'pesetas', 'surtido', 'endo', 'precio', 'vender', 'mueble', 'barato', 'Bernardo', 'dorado', 'Consulta', 'Telefono', 'Razon', 'cama', 'Conde']",sales,321
@@ -353,6 +372,7 @@ ger_1900_iron_8,ger,1900,iron,"['Pastor', 'Predigt', 'abends', 'Akte', 'Abendmah
 ger_1900_iron_9,ger,1900,iron,"['russisch', 'Kaiser', 'Koenig', 'Regierung', 'General', 'Krieg', 'Prinz', 'Rußland', 'Truppe', 'China', 'London', 'japanisch', 'Minister', 'Fuerst', 'Privattelegramm']",war,586
 ger_1900_iron_10,ger,1900,iron,"['Auge', 'Blick', 'Gesicht', 'Mensch', 'lachen', 'Gott', 'denken', 'wissen', 'Liebe', 'sagen', 'sitzen', 'fragen', 'Mutter', 'Herz', 'Dichter']",body,712
 ger_1900_iron_11,ger,1900,iron,"['Meter', 'Wasser', 'laufen', 'dicht', 'rennen', 'Platz', 'Boot', 'Pferd', 'Tier', 'Erde', 'Minute', 'fahren', 'Kilometer', 'Kirche', 'Berg']",travel,279
+eng_1900_gasoline_0,eng,1900,gasoline,"['Steel', 'Amer', 'Copper', 'Inter', 'Pacific', 'Sugar', 'Motor', 'Corp', 'Motors', 'Prod', 'Coal', 'Ohio', 'Iron', 'Cons', 'Tobacco']",production,880
 eng_1900_gasoline_1,eng,1900,gasoline,"['Garage', 'reference', 'room', 'Herald', 'Oarage', 'experience', 'want', 'family', 'Miss', 'apartment', 'good', 'woman', 'home', 'cook', 'wish']",hiring,853
 eng_1900_gasoline_2,eng,1900,gasoline,"['first', 'bond', 'white', 'extra', 'July', 'spot', 'Company', 'Trust', 'street', 'asset', 'attorney', 'liability', 'January', 'unknown', 'March']",companies,340
 eng_1900_gasoline_3,eng,1900,gasoline,"['cent', 'stock', 'yesterday', 'company', 'market', 'month', 'rate', 'year', 'point', 'price', 'share', 'week', 'issue', 'dividend', 'report']",stock,1469

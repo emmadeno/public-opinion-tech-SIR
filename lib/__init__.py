@@ -70,3 +70,17 @@ import csv
 from wmd import WMD
 from networkx.algorithms import community
 import networkx as nx
+from IPython.display import clear_output
+
+from bokeh.io import output_notebook, show, save
+import pandas as pd
+import networkx as nx
+from bokeh.io import output_notebook, show, save
+from bokeh.models import Range1d, Circle, ColumnDataSource, MultiLine
+from bokeh.plotting import figure
+from bokeh.plotting import from_networkx
+from bokeh.palettes import Viridis256,  Blues8, Bokeh8
+from bokeh.transform import linear_cmap
+from networkx.algorithms import community
+from bokeh.models import EdgesAndLinkedNodes, NodesAndLinkedEdges
+import numpy as np
