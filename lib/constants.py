@@ -54,7 +54,7 @@ ELECTRIC_LIGHT = {
 TELEPHONE = {
     "eng" : ["telephone"],
     "fr" : ["telephone"],
-    "ger" : ["telefon"],
+    "ger" : ["telefon", "telephon"],
     "sp" : ["telefono"]
 }
 

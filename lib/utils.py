@@ -32,7 +32,7 @@ def load_spacy(lang):
 def load_df(country, is_raw=False, keyword=None, is_parent=True):
     start = l.time.time()
     lang = C.COUNTRY_TO_LANG[country]
-    df_path = "data/newspaper_dfs/" + C.DF_NAMES[lang]  + ".zip"
+    df_path = "/scratch/students/denove/public-opinion-tech-SIR/data/newspaper_dfs/" + C.DF_NAMES[lang]  + ".zip"
     if keyword is not None:
         df_path = get_keyword_dataframe_name(lang, keyword, is_parent)
     df = l.pd.read_csv(df_path)
@@ -58,4 +58,4 @@ def get_keyword_dataframe_name(lang, keyword, is_parent):
 
 def get_model_name(lang, keyword, begin_year):
     name = "model_" + str(begin_year) + "_" + lang + "_" + keyword + ".obj"
-    return "../../data/spacy_models/" + keyword + "/models_" + lang + "/" + name
+    return "data/spacy_models/" + keyword + "/models_" + lang + "/" + name

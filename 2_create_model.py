@@ -57,7 +57,7 @@ class TopicWrapper(l.BaseEstimator):
         return super().set_params(**params)
     
 def get_best_params(df, lang, year, kw, params):
-    lemmas = l.PR.get_lemmas(df)
+    lemmas = df.lemmas.apply(lambda x : l.PR.lemmas_to_list(x)).values
 
     model = TopicWrapper(k1=1, k2=1, top_n=50, num_workers=1, train_iter=750) # initialise simple model 
     num_splits = 4 #cv_splits
@@ -85,7 +85,8 @@ def get_best_params(df, lang, year, kw, params):
 
     if optimal_params["k2"][0] < 3 and result.best_params_["k2"] >= 3:
          return (lemmas, result.best_params_["k1"], result.best_params_["k2"], params)
-
+    
+    print(means)
     return (lemmas, optimal_params["k1"][0], optimal_params["k2"][0], params)
 
 
@@ -117,16 +118,16 @@ def get_all_models(lang, keyword, begin_years, params):
 def load_all_models(kw, years_dict):
     for lang in years_dict.keys():
         years = years_dict[lang]
-        params = l.pd.read_csv("params.csv")
+        params = l.pd.read_csv("params.csv", sep=";")
         params = get_all_models(lang, kw, years, params)
-        params.to_csv("params.csv", index=False)
+        params.to_csv("data/params.csv", index=False)
 
 
 BEGIN_YEARS_TELEPHONE = {
-    "fr" : [1870, 1890, 1900, 1910, 1920, 1925, 1930, 1935, 1940],
-    "sp" : [1870, 1890, 1900, 1910, 1920, 1930],
-    "ger" : [1880, 1920, 1935],
-    "eng" : [1840, 1870, 1900]
+   # "fr" : [1870, 1890, 1900, 1910, 1920, 1925, 1930, 1935, 1940],
+    #"sp" : [1870, 1890, 1900, 1910, 1920, 1930],
+    "ger" : [1880, 1900, 1905, 1910, 1915, 1920, 1930],
+    #"eng" : [1840, 1870, 1900]
 }
 
 BEGIN_YEARS_IRON = {
@@ -145,7 +146,7 @@ BEGIN_YEARS_GASOLINE = {
 }
 
 #load_all_models("gasoline", BEGIN_YEARS_GASOLINE)
-load_all_models("iron", BEGIN_YEARS_IRON)
+load_all_models("telephone", BEGIN_YEARS_TELEPHONE)
 #load_all_models("telephone", BEGIN_YEARS_TELEPHONE)
 
 

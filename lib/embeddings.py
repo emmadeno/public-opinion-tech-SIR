@@ -11,18 +11,19 @@ class Embeddings:
         self.word2id = {}
 
         for i, lang in enumerate(self.languages):
-            path = "./data/vectors/" + keyword + "/vectors-" + lang + ".txt"
-            embedding, id2word, word2id = load_vec(path)
-            self.embeddings[lang] = embedding
-            self.id2word[lang] = id2word
-            self.word2id[lang] = word2id
+            path = "./data/vectors/" + keyword + "/vectors-" + self.languages[i] + "-" + self.languages[(i + 1) % 2] + ".txt"
+            if path != "./data/vectors/telephone/vectors-eng-ger.txt" and path != "./data/vectors/telephone/vectors-ger-eng.txt":
+                embedding, id2word, word2id = load_vec(path)
+                self.embeddings[lang] = embedding
+                self.id2word[lang] = id2word
+                self.word2id[lang] = word2id
 
         self.topics_df = self.load_topic_df()
 
     def load_topic_df(self):
         topics_df = l.pd.read_csv("data/topics.csv")
-        topics_df = topics_df[(topics_df.lang == self.languages[0]) | (topics_df.lang == self.languages[1])]
         topics_df = topics_df[topics_df.keyword == self.keyword]
+        topics_df = topics_df.drop_duplicates()
         topics_df["topic_id"] = topics_df.apply(lambda row: "_".join([row.id, row.topic_name]).replace(" ", "_"), axis=1)
         return topics_df
 
@@ -30,7 +31,12 @@ class Embeddings:
 def create_model(country, kw):
     df = l.U.load_df(country, keyword=kw)
     df["lemmas"] = df["lemmas"].apply(lambda x : x.replace("'", "").replace("[", "").replace("]", "").replace(",","").lower())
-    sample = df.sample(2000)
+    sample = df.sample(1000)
+    if country == "France" :
+        sample = df[df['lemmas'].map(len) > 5000].sample(1000)
+    elif country == "Spain" :
+        sample = df[df['lemmas'].map(len) > 1000].sample(1000)
+    print(sample.lemmas.apply(lambda x: len(x)).mean())
     sample['lemmas'].replace('', l.np.nan, inplace=True)
     sample.dropna(subset=['lemmas'], inplace=True)
     sample[['lemmas']].to_csv('train.txt', 
@@ -40,7 +46,7 @@ def create_model(country, kw):
                                           quoting = l.csv.QUOTE_NONE, 
                                           quotechar = "", 
                                           escapechar = " ")
-    ftt_model = l.fasttext.train_unsupervised("train.txt", model='skipgram', minCount=1, epoch=5)
+    ftt_model = l.fasttext.train_unsupervised("train.txt", model='skipgram', minCount=1, epoch=15)
     ftt_model.save_model(country + "_" + kw + ".bin")
     l.subprocess.run(["rm", "train.txt"])
 
@@ -106,7 +112,7 @@ def compute_graph_data(embedding, threshold, threshold_relax):
         
     # https://github.com/src-d/wmd-relax
     reduced_emb_t = l.np.array(reduced_emb, dtype=l.np.float32)
-    calc = l.WMD(reduced_emb_t, nbow, vocabulary_min=3, vocabulary_max=2000)
+    calc = l.WMD(reduced_emb_t, nbow, vocabulary_min=1, vocabulary_max=2000)
 
     # calculate weight between each topic 
     graph_topics_df = l.pd.DataFrame(columns = ["from", "to", "weigth"])
@@ -151,7 +157,9 @@ def get_best_thresholds_parallel(embedding, thresholds):
 
     return communities
 
-def get_best_thresholds(embedding, num_processors=20):
+def get_best_thresholds(embedding, num_processors=40):
+
+    print("Starting : " + embedding.keyword + " " + str(embedding.languages))
 
     list_thresholds = []
     for t in l.np.arange(0.5, 7, 0.25):
@@ -167,8 +175,8 @@ def get_best_thresholds(embedding, num_processors=20):
     print("Multiprocessing done, took " + l.U.get_time(start))
     communities_df = l.pd.DataFrame.from_records(l.SP.flatten(communities))
 
-    communities_df.to_csv("./data/communities.csv")
-    communities_df = l.pd.read_csv("./data/communities.csv")
+    path = "_".join([embedding.keyword, embedding.languages[0], embedding.languages[1]])
+    communities_df.to_csv("./dump/communities/" + path + ".csv")
     communities_df["nodes_percentage"] = communities_df.apply(lambda row: row["nodes"]/len(embedding.topics_df), axis=1)
 
     reduced_comm_df = communities_df[communities_df["nodes_percentage"] > 0.45]
@@ -180,6 +188,9 @@ def get_best_thresholds(embedding, num_processors=20):
 
 
 def find_best_thresholds(reduced_comm_kw_df):
+    if len(reduced_comm_kw_df) == 0:
+        print("rip")
+        return (0.5, 0.5, "louvain")
     reduced_comm_kw_df["score"] = reduced_comm_kw_df.apply(lambda row: 0.7*row["modularity"] + 0.15*row["performance"] +0.15*row["coverage"], axis=1)
     best_line = reduced_comm_kw_df.loc[reduced_comm_kw_df["score"].sort_values().tail(1).index[0]]
 
@@ -188,9 +199,9 @@ def find_best_thresholds(reduced_comm_kw_df):
 
     return t, tr, algo
 
-def save_graph_communities(t, tr, embedding):
+def save_graph_communities(t, tr, embedding, path):
     graph_data = l.EMB.compute_graph_data(embedding, t, tr) 
-    path = "./data/graphs/graph_" + embedding.keyword + ".csv"
+    #path = "./data/graphs/graph_" + embedding.keyword + ".csv"
     if l.os.path.exists(path):
         to_concat = [l.pd.read_csv(path), graph_data]
         graph_data = l.pd.concat(to_concat)

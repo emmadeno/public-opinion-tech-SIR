@@ -144,7 +144,7 @@ def areKeywordsInRow(row, keywords, isAnd=False):
         return False
     if isAnd:
         if all(text in str.lower(row) for text in keywords):
-            #if are_words_close(row, 1000, keywords[0], keywords[1]):
+            if are_words_close(row, 100, keywords[0], keywords[1]):
                 return True
     else:
         if any(text in str.lower(row) for text in keywords):

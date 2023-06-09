@@ -27,6 +27,25 @@ def get_corpus(lemmas):
 def get_topic_descriptors(model, index, top_n=15):
     return str([item[0] for item in model.get_topic_words(index, top_n=top_n)])
 
+def get_model(k1, k2, lemmas, name, save=True):
+    ### Set the best model
+    best_k1 = k1
+    best_k2 = k2
+
+    corpus = l.tp.utils.Corpus()
+    for doc in lemmas:
+        if doc: 
+            corpus.add_doc(doc)
+
+    # we can (instead) use a TopicWrapper instead (but it is less straightforward)
+    model = l.tp.PAModel(tw=l.tp.TermWeight.IDF, min_df=10, k1=best_k1, k2=best_k2, corpus=corpus, seed=0)
+    model.burn_in=100
+    model.train(1000, workers=1)
+
+    if save:
+        model.save(name, full=False)
+    return (model, corpus)
+
 class Timespan:
     def __init__(self, df, kw, lang, index):
         self.df_total = df
