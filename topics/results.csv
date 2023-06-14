@@ -1,0 +1,12 @@
+,id,members,edges,words
+0,0,"['models_eng 1850 (4)', 'models_eng 1850 (5)', 'models_eng 1850 (8)']",[],"['house', 'woman', 'cook', 'street', 'address', 'reference', 'room', 'want', 'situation', 'apply']"
+1,1,"['models_eng 1850 (0)', 'models_eng 1850 (1)', 'models_eng 1850 (2)', 'models_eng 1850 (3)', 'models_eng 1850 (6)', 'models_eng 1850 (7)', 'models_eng 1850 (9)', 'models_eng 1850 (10)', 'models_eng 1850 (11)', 'models_eng 1850 (12)', 'models_eng 1850 (13)']",[],"['bank', 'funeral', 'april', 'ship', 'march', 'schr', 'company', 'bark', 'brig', 'nyork']"
+2,2,"['models_eng 1866 (4)', 'models_eng 1866 (5)', 'models_eng 1866 (6)', 'models_eng 1866 (10)']",[],"['shall', 'government', 'congress', 'house', 'people', 'president', 'committee', 'court', 'general', 'state']"
+3,3,"['models_eng 1866 (1)', 'models_eng 1866 (2)', 'models_eng 1866 (8)', 'models_eng 1866 (11)']",[],"['age', 'respectfully', 'avenue', 'friend', 'relative', 'attend', 'residence', 'invite', 'street', 'funeral']"
+4,4,"['models_eng 1866 (0)', 'models_eng 1866 (12)']","[(4, 7)]","['sail', 'providence', 'boston', 'ship', 'york', 'bark', 'brig', 'steamship', 'nyork', 'schr']"
+5,5,"['models_eng 1866 (3)', 'models_eng 1866 (7)', 'models_eng 1866 (9)']","[(5, 6)]","['sale', 'western', 'middling', 'american', 'april', 'central', 'close', 'liverpool', 'cotton', 'market']"
+6,6,"['models_eng 1873 (6)', 'models_eng 1873 (7)']","[(6, 5), (6, 9)]","['bushel', 'corn', 'bbls', 'firm', 'sale', 'dull', 'steady', 'quote', 'market', 'quiet']"
+7,7,"['models_eng 1873 (2)', 'models_eng 1873 (3)', 'models_eng 1873 (5)']","[(7, 4)]","['bead', 'brig', 'sheep', 'july', 'illinois', 'bark', 'steer', 'head', 'schr', 'weight']"
+8,8,"['models_eng 1873 (0)', 'models_eng 1873 (1)', 'models_eng 1873 (4)']",[],"['apply', 'river', 'office', 'address', 'room', 'north', 'sunday', 'ticket', 'pier', 'street']"
+9,9,"['models_eng 1900 (0)', 'models_eng 1900 (2)', 'models_eng 1900 (3)']","[(9, 6)]","['city', 'inter', 'copper', 'cent', 'motor', 'bank', 'stock', 'company', 'bond', 'steel']"
+10,10,"['models_eng 1900 (1)', 'models_eng 1900 (4)']",[],"['cape', 'strs', 'arrive', 'steamship', 'noon', 'ambrose', 'port', 'sail', 'garage', 'pier']"
